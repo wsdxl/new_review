@@ -34,10 +34,10 @@ class ReadExcel:
 
     def read_excel(self):
         self.open()
-        rows=list(self.sheet.rows)
+        rows = list(self.sheet.rows)
         title=[]
-        for i in rows[0]:
-            title.append(i.value)
+        for r in rows[0]:
+            title.append(r.value)
         cases=[]
         for row in rows[1:]:
             data=[]
@@ -46,7 +46,7 @@ class ReadExcel:
             datas=dict(zip(title,data))
             cases.append(datas)
         self.close()
-        return (cases)
+        return cases
 
     def read_excel_obj(self):
         self.open()
@@ -79,6 +79,9 @@ class ReadExcel:
 
 
 if __name__ == '__main__':
-    excel=ReadExcel(r'../data/cases.xlsx', 'login')
-    # excel.read_excel_obj()
-    excel.write(7,2,'python8888')
+    from common.contains import DATADIR
+    import os
+    data_path=os.path.join(DATADIR,'cases.xlsx')
+    excel=ReadExcel(data_path, 'register')
+    data=excel.read_excel()
+    print(data)

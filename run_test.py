@@ -7,14 +7,14 @@ File    : run_test.py
 ============================
 """
 import unittest
-from testcases import testcases
+from common.contains import CASEDIR
 from library.HTMLTestRunnerNew import HTMLTestRunner
 
 # 一、创建测试套件
 suite=unittest.TestSuite()
 # 二、加载测试用例到测试套件中
 loader=unittest.TestLoader()
-suite.addTest(loader.loadTestsFromModule(testcases))
+suite.addTest(loader.discover(CASEDIR))
 
 # 三、创建一个测试运行程序启动器
 runner=HTMLTestRunner(stream=open(r'report/report.html', 'wb'),
