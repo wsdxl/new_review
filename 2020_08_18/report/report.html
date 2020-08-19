@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">练习unittest</h1>
 <p class='attribute'><strong>测试人员 : </strong> dxl</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-08-18 23:14:30</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:06.534000</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 33，通过 30，失败 3，通过率= 90.91%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-08-19 23:19:12</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:10.429487</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 48，通过 41，失败 7，通过率= 85.42%</p>
 
 <p class='description'>练习unittest</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 90.91% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 3 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 30 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 33 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 85.42% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 7 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 41 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 48 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -238,7 +238,7 @@ function html_escape(s) {
     <pre>
     
 ft2_7: 预期结果：{'code': 2, 'msg': '数字格式化异常'}
-实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 1046800.64, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2554001.6, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
@@ -271,7 +271,7 @@ AssertionError: 2 != 0
     <pre>
     
 ft2_9: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
-实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 1046800.64, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2554001.6, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
     return func(self, *args, **kwargs)
@@ -409,13 +409,197 @@ AssertionError: 1 != 2
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
+<tr class='failClass warning'>
+    <td>test_withdraw.TestWithdraw</td>
+    <td class="text-center">15</td>
+    <td class="text-center">11</td>
+    <td class="text-center">4</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',15)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_01: 登录成功</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_02: 提现成功-整数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_03: 提现成功-1位小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_04: 提现成功-2位小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_05: 提现成功-50万</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_06: 会员id为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_07: 会员id不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='ft4_8' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdraw_08: 会员id为字符串</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_8'>失败</button>
+    <div id='div_ft4_8' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_8'>失败</button>
+    <div id='div_ft4_8' class="collapse in" align="left">
+    <pre>
+    
+ft4_8: 预期结果：{'code': 2, 'msg': '数字格式化异常'}
+实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2051601.28, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 77, in test_withdraw
+    raise e
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 65, in test_withdraw
+    self.assertEqual(expected['code'],result['code'])
+AssertionError: 2 != 0
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_09: 会员id为小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='ft4_10' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdraw_10: 提现金额为0</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_10'>失败</button>
+    <div id='div_ft4_10' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_10'>失败</button>
+    <div id='div_ft4_10' class="collapse in" align="left">
+    <pre>
+    
+ft4_10: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2051601.28, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 77, in test_withdraw
+    raise e
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 65, in test_withdraw
+    self.assertEqual(expected['code'],result['code'])
+AssertionError: 2 != 0
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft4_11' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdraw_11: 提现金额为负数</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_11'>失败</button>
+    <div id='div_ft4_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_11'>失败</button>
+    <div id='div_ft4_11' class="collapse in" align="left">
+    <pre>
+    
+ft4_11: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+实际结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 77, in test_withdraw
+    raise e
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 66, in test_withdraw
+    self.assertEqual(expected['msg'],result['msg'])
+AssertionError: '余额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 余额必须大于0并且小于或者等于500000
++ 余额必须大于0并且小于或者等于5000000
+?                      +
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_12: 提现金额为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_13: 提现金额-3位小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='ft4_14' class='none'>
+    <td class='failCase'><div class='testcase'>test_withdraw_14: 提现金额-大于50万</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft4_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_14'>失败</button>
+    <div id='div_ft4_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft4_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_14'>失败</button>
+    <div id='div_ft4_14' class="collapse in" align="left">
+    <pre>
+    
+ft4_14: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+实际结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+Traceback (most recent call last):
+  File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 77, in test_withdraw
+    raise e
+  File "F:\new_review\2020_08_18\testcases\test_withdraw.py", line 66, in test_withdraw
+    self.assertEqual(expected['msg'],result['msg'])
+AssertionError: '余额必须大于0并且小于或者等于500000' != '余额必须大于0并且小于或者等于5000000'
+- 余额必须大于0并且小于或者等于500000
++ 余额必须大于0并且小于或者等于5000000
+?                      +
+
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt4_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_withdraw_15: 提现金额-非数字</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>33</td>
-    <td>30</td>
-    <td>3</td>
+    <td>48</td>
+    <td>41</td>
+    <td>7</td>
     <td>0</td>
-    <td>通过率：90.91%</td>
+    <td>通过率：85.42%</td>
 </tr>
 </table>
 
