@@ -116,19 +116,19 @@ function html_escape(s) {
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">练习unittest</h1>
 <p class='attribute'><strong>测试人员 : </strong> dxl</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-08-19 23:19:12</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:10.429487</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 48，通过 41，失败 7，通过率= 85.42%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-08-20 23:28:52</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:13.710973</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 60，通过 53，失败 7，通过率= 88.33%</p>
 
 <p class='description'>练习unittest</p>
 </div>
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 85.42% }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 88.33% }</a>
 <a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 7 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 41 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 48 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 53 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 60 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -149,40 +149,109 @@ function html_escape(s) {
 </tr>
 
 <tr class='passClass warning'>
+    <td>test_add.TestAdd</td>
+    <td class="text-center">12</td>
+    <td class="text-center">12</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',12)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_01: 借款人正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_02: 加标成功</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_03: 加标失败—借款人id为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_04: 加标失败—标题为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_05: 加标失败—借款金额为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_06: 加标失败—年利率为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_07: 加标失败—借款期限为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_08: 加标失败—借款期限类型为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_09: 加标失败—竞标天数为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_10: 加标失败—借款人id不是当前登录用户</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_11: 加标失败—借款金额为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_12: 加标失败—借款金额为小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
     <td>test_login.TestLogin</td>
     <td class="text-center">6</td>
     <td class="text-center">6</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',6)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',6)" class="detail" id='c2'>详细</a></td>
 </tr>
 
-<tr id='pt1_1' class='hiddenRow'>
+<tr id='pt2_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_login_1: 登录成功</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_2' class='hiddenRow'>
+<tr id='pt2_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_login_2: 手机号为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_3' class='hiddenRow'>
+<tr id='pt2_3' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_login_3: 密码为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_4' class='hiddenRow'>
+<tr id='pt2_4' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_login_4: 手机号未注册</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_5' class='hiddenRow'>
+<tr id='pt2_5' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_login_5: 密码错误</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt1_6' class='hiddenRow'>
+<tr id='pt2_6' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_login_6: 手机号格式错误</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
@@ -193,51 +262,51 @@ function html_escape(s) {
     <td class="text-center">11</td>
     <td class="text-center">3</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c2',14)" class="detail" id='c2'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',14)" class="detail" id='c3'>详细</a></td>
 </tr>
 
-<tr id='pt2_1' class='hiddenRow'>
+<tr id='pt3_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_01: 充值成功-整数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt2_2' class='hiddenRow'>
+<tr id='pt3_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_02: 充值成功-1位小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt2_3' class='hiddenRow'>
+<tr id='pt3_3' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_03: 充值成功-2位小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt2_4' class='hiddenRow'>
+<tr id='pt3_4' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_04: 充值成功-50万</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt2_5' class='hiddenRow'>
+<tr id='pt3_5' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_05: 会员id为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt2_6' class='hiddenRow'>
+<tr id='pt3_6' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_06: id不是当前登录的用户</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft2_7' class='none'>
+<tr id='ft3_7' class='none'>
     <td class='failCase'><div class='testcase'>test_recharge_07: 会员id为字符串</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_7'>失败</button>
-    <div id='div_ft2_7' class="collapse">  -->
+    <button id='btn_ft3_7' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_7'>失败</button>
+    <div id='div_ft3_7' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_7'>失败</button>
-    <div id='div_ft2_7' class="collapse in" align="left">
+    <button id='btn_ft3_7' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_7'>失败</button>
+    <div id='div_ft3_7' class="collapse in" align="left">
     <pre>
     
-ft2_7: 预期结果：{'code': 2, 'msg': '数字格式化异常'}
+ft3_7: 预期结果：{'code': 2, 'msg': '数字格式化异常'}
 实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2554001.6, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
@@ -254,23 +323,23 @@ AssertionError: 2 != 0
     </td>
 </tr>
 
-<tr id='pt2_8' class='hiddenRow'>
+<tr id='pt3_8' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_08: 会员id为小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft2_9' class='none'>
+<tr id='ft3_9' class='none'>
     <td class='failCase'><div class='testcase'>test_recharge_09: 充值金额为0</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_9'>失败</button>
-    <div id='div_ft2_9' class="collapse">  -->
+    <button id='btn_ft3_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_9'>失败</button>
+    <div id='div_ft3_9' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_9'>失败</button>
-    <div id='div_ft2_9' class="collapse in" align="left">
+    <button id='btn_ft3_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_9'>失败</button>
+    <div id='div_ft3_9' class="collapse in" align="left">
     <pre>
     
-ft2_9: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+ft3_9: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
 实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2554001.6, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
@@ -287,23 +356,23 @@ AssertionError: 2 != 0
     </td>
 </tr>
 
-<tr id='pt2_10' class='hiddenRow'>
+<tr id='pt3_10' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_10: 充值金额为负数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft2_11' class='none'>
+<tr id='ft3_11' class='none'>
     <td class='failCase'><div class='testcase'>test_recharge_11: 充值金额为空</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft2_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft2_11'>失败</button>
-    <div id='div_ft2_11' class="collapse">  -->
+    <button id='btn_ft3_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft3_11'>失败</button>
+    <div id='div_ft3_11' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft2_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft2_11'>失败</button>
-    <div id='div_ft2_11' class="collapse in" align="left">
+    <button id='btn_ft3_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft3_11'>失败</button>
+    <div id='div_ft3_11' class="collapse in" align="left">
     <pre>
     
-ft2_11: 预期结果：{'code': 1, 'msg': '充值金额为空'}
+ft3_11: 预期结果：{'code': 1, 'msg': '充值金额为空'}
 实际结果：{'code': 2, 'msg': '余额必须为数值型', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
@@ -320,17 +389,17 @@ AssertionError: 1 != 2
     </td>
 </tr>
 
-<tr id='pt2_12' class='hiddenRow'>
+<tr id='pt3_12' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_12: 充值金额-3位小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt2_13' class='hiddenRow'>
+<tr id='pt3_13' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_13: 充值金额-大于50万</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt2_14' class='hiddenRow'>
+<tr id='pt3_14' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_recharge_14: 充值金额-非数字</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
@@ -341,70 +410,70 @@ AssertionError: 1 != 2
     <td class="text-center">13</td>
     <td class="text-center">0</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c3',13)" class="detail" id='c3'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',13)" class="detail" id='c4'>详细</a></td>
 </tr>
 
-<tr id='pt3_1' class='hiddenRow'>
+<tr id='pt4_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_01: 注册成功-带注册名</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_2' class='hiddenRow'>
+<tr id='pt4_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_02: 成功-不带用户名</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_3' class='hiddenRow'>
+<tr id='pt4_3' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_03: 不输入手机号</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_4' class='hiddenRow'>
+<tr id='pt4_4' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_04: 手机号长度10位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_5' class='hiddenRow'>
+<tr id='pt4_5' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_05: 手机号长度12位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_6' class='hiddenRow'>
+<tr id='pt4_6' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_06: 手机号含有非法字符</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_7' class='hiddenRow'>
+<tr id='pt4_7' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_07: 已注册过的手机号</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_8' class='hiddenRow'>
+<tr id='pt4_8' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_08: 密码7位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_9' class='hiddenRow'>
+<tr id='pt4_9' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_09: 密码17位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_10' class='hiddenRow'>
+<tr id='pt4_10' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_10: 不输入密码</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_11' class='hiddenRow'>
+<tr id='pt4_11' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_11: 注册名11位</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_12' class='hiddenRow'>
+<tr id='pt4_12' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_12: 类型输入非0，1内容</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt3_13' class='hiddenRow'>
+<tr id='pt4_13' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_register_13: 不输入类型</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
@@ -415,56 +484,56 @@ AssertionError: 1 != 2
     <td class="text-center">11</td>
     <td class="text-center">4</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c4',15)" class="detail" id='c4'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',15)" class="detail" id='c5'>详细</a></td>
 </tr>
 
-<tr id='pt4_1' class='hiddenRow'>
+<tr id='pt5_1' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_01: 登录成功</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_2' class='hiddenRow'>
+<tr id='pt5_2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_02: 提现成功-整数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_3' class='hiddenRow'>
+<tr id='pt5_3' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_03: 提现成功-1位小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_4' class='hiddenRow'>
+<tr id='pt5_4' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_04: 提现成功-2位小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_5' class='hiddenRow'>
+<tr id='pt5_5' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_05: 提现成功-50万</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_6' class='hiddenRow'>
+<tr id='pt5_6' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_06: 会员id为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_7' class='hiddenRow'>
+<tr id='pt5_7' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_07: 会员id不存在</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft4_8' class='none'>
+<tr id='ft5_8' class='none'>
     <td class='failCase'><div class='testcase'>test_withdraw_08: 会员id为字符串</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft4_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_8'>失败</button>
-    <div id='div_ft4_8' class="collapse">  -->
+    <button id='btn_ft5_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft5_8'>失败</button>
+    <div id='div_ft5_8' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft4_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_8'>失败</button>
-    <div id='div_ft4_8' class="collapse in" align="left">
+    <button id='btn_ft5_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft5_8'>失败</button>
+    <div id='div_ft5_8' class="collapse in" align="left">
     <pre>
     
-ft4_8: 预期结果：{'code': 2, 'msg': '数字格式化异常'}
+ft5_8: 预期结果：{'code': 2, 'msg': '数字格式化异常'}
 实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2051601.28, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
@@ -481,23 +550,23 @@ AssertionError: 2 != 0
     </td>
 </tr>
 
-<tr id='pt4_9' class='hiddenRow'>
+<tr id='pt5_9' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_09: 会员id为小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft4_10' class='none'>
+<tr id='ft5_10' class='none'>
     <td class='failCase'><div class='testcase'>test_withdraw_10: 提现金额为0</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft4_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_10'>失败</button>
-    <div id='div_ft4_10' class="collapse">  -->
+    <button id='btn_ft5_10' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft5_10'>失败</button>
+    <div id='div_ft5_10' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft4_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_10'>失败</button>
-    <div id='div_ft4_10' class="collapse in" align="left">
+    <button id='btn_ft5_10' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft5_10'>失败</button>
+    <div id='div_ft5_10' class="collapse in" align="left">
     <pre>
     
-ft4_10: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+ft5_10: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
 实际结果：{'code': 0, 'msg': 'OK', 'data': {'id': 2079876, 'leave_amount': 2051601.28, 'mobile_phone': '13641878150', 'reg_name': '小磊', 'reg_time': '2020-08-16 17:14:05.0', 'type': 0}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
@@ -514,18 +583,18 @@ AssertionError: 2 != 0
     </td>
 </tr>
 
-<tr id='ft4_11' class='none'>
+<tr id='ft5_11' class='none'>
     <td class='failCase'><div class='testcase'>test_withdraw_11: 提现金额为负数</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft4_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_11'>失败</button>
-    <div id='div_ft4_11' class="collapse">  -->
+    <button id='btn_ft5_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft5_11'>失败</button>
+    <div id='div_ft5_11' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft4_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_11'>失败</button>
-    <div id='div_ft4_11' class="collapse in" align="left">
+    <button id='btn_ft5_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft5_11'>失败</button>
+    <div id='div_ft5_11' class="collapse in" align="left">
     <pre>
     
-ft4_11: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+ft5_11: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
 实际结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
@@ -546,28 +615,28 @@ AssertionError: '余额必须大于0并且小于或者等于500000' != '余额�
     </td>
 </tr>
 
-<tr id='pt4_12' class='hiddenRow'>
+<tr id='pt5_12' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_12: 提现金额为空</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='pt4_13' class='hiddenRow'>
+<tr id='pt5_13' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_13: 提现金额-3位小数</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
-<tr id='ft4_14' class='none'>
+<tr id='ft5_14' class='none'>
     <td class='failCase'><div class='testcase'>test_withdraw_14: 提现金额-大于50万</div></td>
     <td colspan='5' align='center'>
     <!--默认收起错误信息 -Findyou
-    <button id='btn_ft4_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft4_14'>失败</button>
-    <div id='div_ft4_14' class="collapse">  -->
+    <button id='btn_ft5_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft5_14'>失败</button>
+    <div id='div_ft5_14' class="collapse">  -->
     <!-- 默认展开错误信息 -Findyou -->
-    <button id='btn_ft4_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft4_14'>失败</button>
-    <div id='div_ft4_14' class="collapse in" align="left">
+    <button id='btn_ft5_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft5_14'>失败</button>
+    <div id='div_ft5_14' class="collapse in" align="left">
     <pre>
     
-ft4_14: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
+ft5_14: 预期结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000'}
 实际结果：{'code': 2, 'msg': '余额必须大于0并且小于或者等于5000000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
 Traceback (most recent call last):
   File "F:\new_review\2020_08_18\library\ddt.py", line 145, in wrapper
@@ -588,18 +657,18 @@ AssertionError: '余额必须大于0并且小于或者等于500000' != '余额�
     </td>
 </tr>
 
-<tr id='pt4_15' class='hiddenRow'>
+<tr id='pt5_15' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_withdraw_15: 提现金额-非数字</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>48</td>
-    <td>41</td>
+    <td>60</td>
+    <td>53</td>
     <td>7</td>
     <td>0</td>
-    <td>通过率：85.42%</td>
+    <td>通过率：88.33%</td>
 </tr>
 </table>
 
