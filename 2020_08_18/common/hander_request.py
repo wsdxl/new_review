@@ -14,7 +14,7 @@ class HeadleRequest:
         elif method=='patch':
             return requests.patch(url=url,json=json,data=data,headers=headers)
         elif method=='get':
-            return  requests.get(url=url,params=params)
+            return  requests.get(url=url,params=params,headers=headers)
 
 class HeadleSessionRequest:
 

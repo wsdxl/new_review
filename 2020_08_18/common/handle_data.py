@@ -16,10 +16,9 @@ def handle_data(data):
         item=res.group()
         key=res.group(1)
         try:
-            data=data.replace(item,conf.get('test_data',key))
-
-        except:
             data=data.replace(item,getattr(TestData,key))
+        except:
+            data = data.replace(item, conf.get('test_data', key))
 
     return data
 

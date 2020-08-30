@@ -10,6 +10,9 @@ import os
 import unittest
 from common.contains import CASEDIR,REPORTDIR
 from library.HTMLTestRunnerNew import HTMLTestRunner
+from testcases import test_main_stream
+from common.send_email import send_email
+
 
 report_path=os.path.join(REPORTDIR,'report.html')
 
@@ -17,6 +20,7 @@ report_path=os.path.join(REPORTDIR,'report.html')
 suite=unittest.TestSuite()
 # 二、加载测试用例到测试套件中
 loader=unittest.TestLoader()
+# suite.addTest(loader.loadTestsFromModule(test_main_stream))
 suite.addTest(loader.discover(CASEDIR))
 
 # 三、创建一个测试运行程序启动器
@@ -27,6 +31,9 @@ runner=HTMLTestRunner(stream=open(report_path, 'wb'),
 
 # 四、使用启动器执行测试套件
 runner.run(suite)
+
+# 发送邮件
+send_email(report_path)
 
 
 

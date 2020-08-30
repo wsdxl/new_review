@@ -85,6 +85,7 @@ class TestAudit(unittest.TestCase):
         # 发送请求
         response=self.http.send(url=url,method=method,json=data,headers=headers)
         json_res=response.json()
+
         # 如果审核通过的项目返回ok，说明该项目已审核
         if case['title']=='审核通过' and json_res['msg']=='OK':
             pass_loan_id=getattr(TestData,'loan_id')
